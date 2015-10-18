@@ -1,0 +1,172 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'rimraf',
+1 verbose cli   '-g' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.2
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'rimraf', null ]
+7 verbose cache add spec rimraf
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'rimraf',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'rimraf',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed rimraf@*
+10 verbose addNamed "*" is a valid semver range for rimraf
+11 silly addNameRange { name: 'rimraf', range: '*', hasData: false }
+12 silly mapToRegistry name rimraf
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/rimraf
+16 verbose addNameRange registry:https://registry.npmjs.org/rimraf not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/rimraf
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 5:08:15 PM
+20 verbose request id 188d2c674453ab4b
+21 verbose etag "7K1QAFI50HA61LPOTSAM1E14W"
+22 http request GET https://registry.npmjs.org/rimraf
+23 http 304 https://registry.npmjs.org/rimraf
+24 silly get cb [ 304,
+24 silly get   { date: 'Sun, 18 Oct 2015 12:08:18 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     etag: '"7K1QAFI50HA61LPOTSAM1E14W"',
+24 silly get     age: '31',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-fra1245-FRA',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '2',
+24 silly get     'x-timer': 'S1445170098.406022,VS0,VE0',
+24 silly get     vary: 'Accept' } ]
+25 verbose etag https://registry.npmjs.org/rimraf from cache
+26 verbose get saving rimraf to /Users/anis/.npm/registry.npmjs.org/rimraf/.cache.json
+27 silly addNameRange number 2 { name: 'rimraf', range: '*', hasData: true }
+28 silly addNameRange versions [ 'rimraf',
+28 silly addNameRange   [ '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.4',
+28 silly addNameRange     '1.0.5',
+28 silly addNameRange     '1.0.6',
+28 silly addNameRange     '1.0.7',
+28 silly addNameRange     '1.0.8',
+28 silly addNameRange     '1.0.9',
+28 silly addNameRange     '2.0.0',
+28 silly addNameRange     '2.0.1',
+28 silly addNameRange     '2.0.2',
+28 silly addNameRange     '2.0.3',
+28 silly addNameRange     '2.1.0',
+28 silly addNameRange     '2.1.1',
+28 silly addNameRange     '2.1.2',
+28 silly addNameRange     '2.1.3',
+28 silly addNameRange     '2.1.4',
+28 silly addNameRange     '2.2.0',
+28 silly addNameRange     '2.2.1',
+28 silly addNameRange     '2.2.2',
+28 silly addNameRange     '2.2.3',
+28 silly addNameRange     '2.2.4',
+28 silly addNameRange     '2.2.5',
+28 silly addNameRange     '2.2.6',
+28 silly addNameRange     '2.2.8',
+28 silly addNameRange     '2.3.0',
+28 silly addNameRange     '2.3.1',
+28 silly addNameRange     '2.3.2',
+28 silly addNameRange     '2.3.3',
+28 silly addNameRange     '2.3.4',
+28 silly addNameRange     '2.4.0',
+28 silly addNameRange     '2.4.1',
+28 silly addNameRange     '2.4.2',
+28 silly addNameRange     '2.4.3' ] ]
+29 silly addNamed rimraf@2.4.3
+30 verbose addNamed "2.4.3" is a plain semver version for rimraf
+31 silly cache afterAdd rimraf@2.4.3
+32 verbose afterAdd /Users/anis/.npm/rimraf/2.4.3/package/package.json not in flight; writing
+33 verbose afterAdd /Users/anis/.npm/rimraf/2.4.3/package/package.json written
+34 silly install resolved [ { name: 'rimraf',
+34 silly install resolved     version: '2.4.3',
+34 silly install resolved     main: 'rimraf.js',
+34 silly install resolved     description: 'A deep deletion module for node (like `rm -rf`)',
+34 silly install resolved     author:
+34 silly install resolved      { name: 'Isaac Z. Schlueter',
+34 silly install resolved        email: 'i@izs.me',
+34 silly install resolved        url: 'http://blog.izs.me/' },
+34 silly install resolved     license: 'ISC',
+34 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/rimraf.git' },
+34 silly install resolved     scripts: { test: 'tap test/*.js' },
+34 silly install resolved     bin: { rimraf: './bin.js' },
+34 silly install resolved     dependencies: { glob: '^5.0.14' },
+34 silly install resolved     files: [ 'LICENSE', 'README.md', 'bin.js', 'rimraf.js' ],
+34 silly install resolved     devDependencies: { mkdirp: '^0.5.1', tap: '^1.3.1' },
+34 silly install resolved     gitHead: 'ec7050f8ca14c931b847414f18466e601ca7c02e',
+34 silly install resolved     bugs: { url: 'https://github.com/isaacs/rimraf/issues' },
+34 silly install resolved     homepage: 'https://github.com/isaacs/rimraf#readme',
+34 silly install resolved     _id: 'rimraf@2.4.3',
+34 silly install resolved     _shasum: 'e5b51c9437a4c582adb955e9f28cf8d945e272af',
+34 silly install resolved     _from: 'rimraf@*',
+34 silly install resolved     _npmVersion: '3.2.2',
+34 silly install resolved     _nodeVersion: '2.2.1',
+34 silly install resolved     _npmUser: { name: 'isaacs', email: 'isaacs@npmjs.com' },
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: 'e5b51c9437a4c582adb955e9f28cf8d945e272af',
+34 silly install resolved        tarball: 'http://registry.npmjs.org/rimraf/-/rimraf-2.4.3.tgz' },
+34 silly install resolved     maintainers: [ [Object] ],
+34 silly install resolved     directories: {},
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/rimraf/-/rimraf-2.4.3.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install rimraf@2.4.3 into /usr/local/lib
+36 info installOne rimraf@2.4.3
+37 verbose installOne of rimraf to /usr/local/lib not in flight; installing
+38 verbose lock using /Users/anis/.npm/_locks/rimraf-b73f95069093fa76.lock for /usr/local/lib/node_modules/rimraf
+39 silly install write writing rimraf 2.4.3 to /usr/local/lib/node_modules/rimraf
+40 verbose unbuild lib/node_modules/rimraf
+41 silly gentlyRm /usr/local/lib/node_modules/rimraf is being purged from base /usr/local
+42 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/rimraf
+43 verbose tar unpack /Users/anis/.npm/rimraf/2.4.3/package.tgz
+44 verbose tar unpacking to /usr/local/lib/node_modules/rimraf
+45 silly gentlyRm /usr/local/lib/node_modules/rimraf is being purged
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/rimraf
+47 silly gunzTarPerm modes [ '755', '644' ]
+48 error tar.unpack untar error /Users/anis/.npm/rimraf/2.4.3/package.tgz
+49 verbose unlock done using /Users/anis/.npm/_locks/rimraf-b73f95069093fa76.lock for /usr/local/lib/node_modules/rimraf
+50 verbose fstream_path /usr/local/lib/node_modules/rimraf
+51 verbose fstream_type Directory
+52 verbose fstream_class DirWriter
+53 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/rimraf'
+53 verbose stack     at Error (native)
+54 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+54 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+54 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+55 verbose cwd /Users/anis/learning/todo
+56 error Darwin 15.0.0
+57 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "rimraf" "-g"
+58 error node v4.1.2
+59 error npm  v2.14.4
+60 error path /usr/local/lib/node_modules/rimraf
+61 error code EACCES
+62 error errno -13
+63 error syscall mkdir
+64 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/rimraf'
+64 error     at Error (native)
+64 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/rimraf']
+64 error   errno: -13,
+64 error   code: 'EACCES',
+64 error   syscall: 'mkdir',
+64 error   path: '/usr/local/lib/node_modules/rimraf',
+64 error   fstream_type: 'Directory',
+64 error   fstream_path: '/usr/local/lib/node_modules/rimraf',
+64 error   fstream_class: 'DirWriter',
+64 error   fstream_stack:
+64 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+64 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+64 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+65 error Please try running this command again as root/Administrator.
+66 verbose exit [ -13, true ]
+67 verbose unbuild lib/node_modules/rimraf
+68 silly gentlyRm /usr/local/lib/node_modules/rimraf is being purged from base /usr/local
+69 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/rimraf

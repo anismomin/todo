@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Todo Appliaction with node, express, typescript">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TODO</title>
+       
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
+        <link rel="stylesheet" href="./css/style.css">
+         
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+
+    	<div class="container">
+    	    <div class="row">
+    	        <div class="col-md-6">
+    	            <div class="todolist not-done">
+    	             <h1>Todos</h1>
+                            <form action="todo/add" method="post">
+                                <input id="add-todo" type="text" name="todo_name" class="form-control add-todo" placeholder="Add todo">     
+                            </form>
+    	                    <button id="checkAll" class="btn btn-success">Mark all as done</button>
+    	                    <hr>
+    	                    <ul id="sortable" class="list-unstyled">
+
+                          <% for(var i=0; i < todo.length; i++) {%>
+                           
+                            <li class="ui-state-default">
+                                <div class="checkbox">
+                                    <label>
+                                         <%= todo[i].todo_name %>
+                                    </label>
+                                    <form id="complete-<%= i %>" action="todo/complete/<%= i %>" method="post" class="pull-right">    
+                                        <button class="remove-item btn btn-default btn-xs"><span class="glyphicon glyphicon-check"></span></button>
+                                    </form>
+                                </div>
+                            </li>
+                             <% } %> 
+    	                </ul>
+    	                <div class="todo-footer">
+    	                    <strong><span class="count-todos"></span></strong> Items Left
+    	                </div>
+    	            </div>
+    	        </div>
+    	        <div class="col-md-6">
+    	            <div class="todolist">
+    	             <h1>Already Done</h1>
+    	                <ul id="done-items" class="list-unstyled">
+
+                        <% for(var i=0; i < complete.length; i++) {%>
+                           
+                            <li class="ui-state-default">
+                                <label>
+                                     <%= complete[i].todo_name %>
+                                </label>
+                                <form id="delete-<%= i %>" action="todo/delete/<%= i %>" method="post" class="pull-right">    
+                                    <button class="remove-item btn btn-default btn-xs pull-right"><span class="glyphicon glyphicon-remove"></span></button>
+                                </form>
+                            </li>
+                         <% } %> 
+
+    	                </ul>
+    	            </div>
+    	        </div>
+    	    </div>
+    	</div>
+    	
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="./js/todo.js"></script>
+    </body>
+</html>

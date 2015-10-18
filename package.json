@@ -1,0 +1,31 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "Todo Appliation with typesceipt and Node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "todo",
+    "typescript",
+    "express",
+    "node"
+  ],
+  "author": "Anis Momin @ anismomin.dev@gmail.",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-typescript": "^2.9.2"
+  }
+}
